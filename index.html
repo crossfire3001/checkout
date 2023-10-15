@@ -10,12 +10,9 @@
     <title>Checkout example · Bootstrap v5.3</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
-
-    
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -156,7 +153,6 @@
 <div class="container">
   <main>
     <div class="py-5 text-center">
-      <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h2>Checkout form</h2>
       <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
     </div>
@@ -189,7 +185,7 @@
             </div>
             <span class="text-body-secondary">$5</span>
           </li>
-          <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+          <li class="list-group-item d-none justify-content-between bg-body-tertiary">
             <div class="text-success">
               <h6 class="my-0">Promo code</h6>
               <small>EXAMPLECODE</small>
@@ -198,14 +194,14 @@
           </li>
           <li class="list-group-item d-flex justify-content-between">
             <span>Total (USD)</span>
-            <strong>$20</strong>
+            <strong>$25</strong>
           </li>
         </ul>
 
         <form class="card p-2">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Promo code">
-            <button type="submit" class="btn btn-secondary">Redeem</button>
+            <input type="text" class="form-control" placeholder="Promo code" id="promo-code">
+            <button type="button" class="btn btn-secondary" id="redeem">Redeem</button>
           </div>
         </form>
       </div>
@@ -375,7 +371,7 @@
     </ul>
   </footer>
 </div>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="checkout.js"></script></body>
 </html>
